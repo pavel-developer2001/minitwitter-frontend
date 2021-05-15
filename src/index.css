@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+	margin: 0 275px;
+}
+#components-form-demo-normal-login .login-form {
+	max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+	float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+	float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+	width: 100%;
+}
+
+.auth {
+	width: 21%;
+	margin: 8% 38%;
+}
+.auth__link {
+	margin-bottom: 15px;
+}
+.auth__params {
+	text-align: center;
+}
+
+.sidebar {
+	background-color: white;
+	position: fixed;
+	border-right: 1px solid gainsboro;
+}
+.sidebar-right {
+	position: fixed;
+	right: 17%;
+	height: -webkit-fill-available;
+}
+.sidebar__user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease 0s;
+	transform: translateY();
+	padding: 5px;
+	margin-top: 280%;
+}
+.sidebar__user-name {
+	margin-left: 5px;
+}
+.ant-layout {
+	background: none;
+}
+.mylayout__content {
+	min-width: 200px;
+	position: absolute;
+	left: 31.3%;
+	width: 38.5% !important;
+	/* max-width: 570px; */
+}
+
+.home__header {
+	padding: 5px 15px;
+	background-color: white;
+	border-bottom: 1px solid gainsboro;
+	z-index: 99;
+	font-size: 20px;
+	font-weight: 900;
+	position: sticky;
+	top: 0;
+}
+
+.add-tweet {
+	display: flex;
+	padding: 10px 5px 10px 5px;
+	background-color: white;
+}
+.add-tweet__form {
+	border: none;
+	width: 72%;
+	margin-left: 5px;
+	font-size: 18px;
+}
+.add-tweet__btn {
+	margin-top: 8%;
+	margin-left: 5px;
+}
+.tweet-list {
+	margin-top: 25px;
+}
+.tweet-list-item {
+	display: flex;
+	background-color: white;
+	padding: 10px 8px 10px 8px;
+	transition: all 1s ease 0s;
+}
+.tweet-list-item:hover {
+	cursor: pointer;
+	background-color: gainsboro;
+}
+.tweet-list-item__content {
+	margin: 0 10px;
+	width: 86%;
+}
+.tweet-list-item__foot {
+	display: flex;
+	margin: 10px 0px;
+}
+.tweet-list-item__foot-setting {
+	margin: 0px 25px;
+}
+.tweet-list-item__foot-setting-icon {
+	border: none;
+}
+.tweet-list-item__foot-setting-count {
+	margin-left: 15px;
+	color: cadetblue;
+	font-weight: 600;
+}
+.profile__header {
+	border-bottom: 1px solid gainsboro;
 }
