@@ -90,7 +90,8 @@
 	margin-left: 5px;
 }
 .tweet-list {
-	margin-top: 25px;
+	/* margin-top: 25px; */
+	border-top: 25px solid cadetblue;
 }
 .tweet-list-item {
 	display: flex;
