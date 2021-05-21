@@ -19,7 +19,6 @@ const Register = () => {
 	const handleRegisterUser = (e: any) => {
 		e.preventDefault();
 		try {
-			console.log(name, email, password, password2);
 			newUser({
 				variables: {
 					input: {
