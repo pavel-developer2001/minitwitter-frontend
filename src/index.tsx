@@ -5,10 +5,11 @@ import "./index.css";
 import App from "./App";
 
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { cache } from "./App";
 
 const client = new ApolloClient({
 	uri: "http://localhost:5000/graphql",
-	cache: new InMemoryCache(),
+	cache,
 });
 
 ReactDOM.render(

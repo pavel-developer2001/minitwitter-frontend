@@ -8,20 +8,27 @@ import {
 	TeamOutlined,
 	UserOutlined,
 } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Title from "antd/lib/skeleton/Title";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
-const menu = (
-	<Menu>
-		<Menu.Item>
-			<Link to='/user'>Профиль</Link>
-		</Menu.Item>
-		<Menu.Item>Выход</Menu.Item>
-	</Menu>
-);
+
 const MyLayout: React.FC<any> = ({ children }) => {
+	const history = useHistory();
+	const exitUser = () => {
+		history.push("/login");
+		localStorage.removeItem("token");
+		localStorage.removeItem("user");
+	};
+	const menu = (
+		<Menu>
+			<Menu.Item>
+				<Link to='/user'>Профиль</Link>
+			</Menu.Item>
+			<Menu.Item onClick={exitUser}>Выход</Menu.Item>
+		</Menu>
+	);
 	return (
 		<Layout style={{ minHeight: "100vh" }}>
 			<Sider className='sidebar'>

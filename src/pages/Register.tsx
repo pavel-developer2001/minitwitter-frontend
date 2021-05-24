@@ -3,6 +3,7 @@ import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined, MailOutlined } from "@ant-design/icons";
 import { useMutation } from "@apollo/client";
 import { REGISTER_USER } from "../mutations/user";
+import { useHistory } from "react-router-dom";
 
 const Register = () => {
 	const onFinish = (values: any) => {
@@ -15,7 +16,7 @@ const Register = () => {
 	const [password2, setPassword2] = React.useState("");
 
 	const [newUser] = useMutation(REGISTER_USER);
-
+	const history = useHistory();
 	const handleRegisterUser = (e: any) => {
 		e.preventDefault();
 		try {
@@ -30,6 +31,13 @@ const Register = () => {
 				},
 			}).then((state) => {
 				console.log(state.data.registerUser);
+				setName("");
+				setEmail("");
+				setPassword("");
+				setPassword2("");
+				localStorage.setItem("user", JSON.stringify(state.data.registerUser));
+				localStorage.setItem("token", state.data.registerUser.token);
+				history.push(`/`);
 			});
 		} catch (e) {
 			console.log(e);
