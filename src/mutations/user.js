@@ -7,6 +7,12 @@ export const REGISTER_USER = gql`
 			email
 			password
 			password2
+			User {
+				id
+				name
+				email
+				token
+			}
 		}
 	}
 `;
