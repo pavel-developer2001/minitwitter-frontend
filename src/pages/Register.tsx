@@ -29,7 +29,7 @@ const Register = () => {
 					},
 				},
 			}).then((state) => {
-				console.log(state);
+				console.log(state.data.registerUser);
 			});
 		} catch (e) {
 			console.log(e);
