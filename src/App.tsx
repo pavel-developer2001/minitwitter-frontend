@@ -17,6 +17,7 @@ const IS_LOGGED_IN = gql`
 	}
 `;
 export const cache = new InMemoryCache();
+
 cache.writeQuery({
 	query: IS_LOGGED_IN,
 	data: {
@@ -26,6 +27,7 @@ cache.writeQuery({
 
 const App = () => {
 	const { data } = useQuery(IS_LOGGED_IN);
+
 	return (
 		<div className='app'>
 			<Router>
