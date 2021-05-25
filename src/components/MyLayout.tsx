@@ -29,6 +29,7 @@ const MyLayout: React.FC<any> = ({ children }) => {
 			<Menu.Item onClick={exitUser}>Выход</Menu.Item>
 		</Menu>
 	);
+	const users: any = localStorage.getItem("user");
 	return (
 		<Layout style={{ minHeight: "100vh" }}>
 			<Sider className='sidebar'>
@@ -46,7 +47,9 @@ const MyLayout: React.FC<any> = ({ children }) => {
 				<Dropdown overlay={menu} placement='topCenter' arrow>
 					<div className='sidebar__user'>
 						<Avatar size='large' icon={<UserOutlined />} />
-						<strong className='sidebar__user-name'>Dark Side</strong>
+						<strong className='sidebar__user-name'>
+							{JSON.parse(users).name}
+						</strong>
 					</div>
 				</Dropdown>
 			</Sider>
