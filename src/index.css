@@ -4,7 +4,7 @@
 }
 
 .app {
-	margin: 0 275px;
+	margin: 0 100px;
 }
 #components-form-demo-normal-login .login-form {
 	max-width: 300px;
@@ -18,7 +18,12 @@
 #components-form-demo-normal-login .login-form-button {
 	width: 100%;
 }
-
+.ant-menu-item-icon {
+	font-weight: 800 !important;
+	line-height: 24px !important;
+	font-size: 20px !important;
+	color: rgb(15, 20, 25) !important;
+}
 .auth {
 	width: 21%;
 	margin: 8% 38%;
@@ -31,14 +36,29 @@
 }
 
 .sidebar {
+	min-width: 320px !important;
+	width: 320px !important;
 	background-color: white;
 	position: fixed;
 	border-right: 1px solid gainsboro;
 }
+.menu__li {
+	font-weight: 800;
+	line-height: 24px;
+	font-size: 20px;
+	color: rgb(15, 20, 25);
+}
 .sidebar-right {
+	min-width: 320px !important;
+	width: 320px !important;
 	position: fixed;
-	right: 17%;
+	background-color: white;
+	border-left: 1px solid gainsboro;
+	right: 7.9%;
 	height: -webkit-fill-available;
+}
+.sidebar-right__search {
+	padding: 6px 15px;
 }
 .sidebar__user {
 	display: flex;
@@ -47,7 +67,8 @@
 	transition: all 1s ease 0s;
 	transform: translateY();
 	padding: 5px;
-	margin-top: 280%;
+	margin-top: 165%;
+	width: 65%;
 }
 .sidebar__user-name {
 	margin-left: 5px;
@@ -58,9 +79,8 @@
 .mylayout__content {
 	min-width: 200px;
 	position: absolute;
-	left: 31.3%;
-	width: 38.5% !important;
-	/* max-width: 570px; */
+	left: 27.6%;
+	width: 43.5% !important;
 }
 
 .home__header {
@@ -90,8 +110,7 @@
 	margin-left: 5px;
 }
 .tweet-list {
-	/* margin-top: 25px; */
-	border-top: 25px solid cadetblue;
+	border-top: 20px solid rgb(235, 238, 240);
 }
 .tweet-list-item {
 	display: flex;
@@ -101,7 +120,7 @@
 }
 .tweet-list-item:hover {
 	cursor: pointer;
-	background-color: gainsboro;
+	background-color: rgb(247, 249, 250);
 }
 .tweet-list-item__content {
 	margin: 0 10px;
@@ -124,4 +143,35 @@
 }
 .profile__header {
 	border-bottom: 1px solid gainsboro;
+}
+.who-to-read {
+	padding: 15px 0px;
+	margin: 15px 18px;
+	background-color: rgb(247, 249, 250);
+	border-radius: 16px;
+}
+.who-to-read-title {
+	font-weight: 800;
+	line-height: 24px;
+	font-size: 20px;
+	color: rgb(15, 20, 25);
+	padding: 5px 15px;
+}
+.advice-user-item {
+	border-bottom: 1px solid gainsboro;
+	border-top: 1px solid gainsboro;
+	transition: all 1s ease 0s;
+	padding: 10px 10px;
+}
+.advice-user-item:hover {
+	cursor: pointer;
+	background-color: white;
+}
+.advice-user-item__author {
+	margin: 5px;
+}
+.advice-user-item__btn {
+	border-radius: 16px;
+	margin-left: 15px;
+	font-weight: 800;
 }

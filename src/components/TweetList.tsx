@@ -9,6 +9,7 @@ import {
 } from "@ant-design/icons";
 import { useQuery } from "@apollo/client";
 import { GET_ALL_TWEETS } from "../query/tweet";
+
 type TweetListItemProps = {
 	author: string;
 	text: string;
@@ -18,6 +19,7 @@ type TweetListItemProps = {
 	retweets: number;
 	comments: number;
 };
+
 const TweetListItem: React.FC<TweetListItemProps> = ({
 	author,
 	text,

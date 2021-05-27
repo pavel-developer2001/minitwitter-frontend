@@ -10,6 +10,8 @@ import {
 } from "@ant-design/icons";
 import { Link, useHistory } from "react-router-dom";
 import Title from "antd/lib/skeleton/Title";
+import Search from "antd/lib/input/Search";
+import WhoToRead from "../components/WhoToRead";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -29,17 +31,27 @@ const MyLayout: React.FC<any> = ({ children }) => {
 			<Menu.Item onClick={exitUser}>Выход</Menu.Item>
 		</Menu>
 	);
+	const onSearch = (value: any) => console.log(value);
+
 	const users: any = localStorage.getItem("user");
 	return (
 		<Layout style={{ minHeight: "100vh" }}>
 			<Sider className='sidebar'>
 				<div className='logo' />
 				<Menu theme='light' defaultSelectedKeys={["1"]} mode='inline'>
-					<Menu.Item key='1' icon={<HomeOutlined />}>
+					<Menu.Item
+						className='menu__li'
+						key='1'
+						icon={<HomeOutlined className='menu__li' />}
+					>
 						<Link to='/'> Главная</Link>
 					</Menu.Item>
 
-					<Menu.Item key='2' icon={<UserOutlined />}>
+					<Menu.Item
+						className='menu__li'
+						key='2'
+						icon={<UserOutlined className='menu__li' />}
+					>
 						<Link to='/user'>Профиль</Link>
 					</Menu.Item>
 				</Menu>
@@ -65,7 +77,17 @@ const MyLayout: React.FC<any> = ({ children }) => {
 					</div>
 				</Content>
 
-				<Sider className='sidebar-right'>test</Sider>
+				<Sider className='sidebar-right'>
+					{" "}
+					<Search
+						className='sidebar-right__search'
+						placeholder='Поиск в Твиттере'
+						size='large'
+						allowClear
+						onSearch={onSearch}
+					/>
+					<WhoToRead />
+				</Sider>
 			</Layout>
 		</Layout>
 	);
