@@ -1,0 +1,32 @@
+.tweet-list {
+  border-top: 20px solid rgb(235, 238, 240);
+}
+.tweet-list-item {
+  display: flex;
+  background-color: white;
+  padding: 10px 8px 10px 8px;
+  transition: all 1s ease 0s;
+}
+.tweet-list-item:hover {
+  cursor: pointer;
+  background-color: rgb(247, 249, 250);
+}
+.tweet-list-item__content {
+  margin: 0 10px;
+  width: 86%;
+}
+.tweet-list-item__foot {
+  display: flex;
+  margin: 10px 0px;
+}
+.tweet-list-item__foot-setting {
+  margin: 0px 25px;
+}
+.tweet-list-item__foot-setting-icon {
+  border: none;
+}
+.tweet-list-item__foot-setting-count {
+  margin-left: 15px;
+  color: cadetblue;
+  font-weight: 600;
+}

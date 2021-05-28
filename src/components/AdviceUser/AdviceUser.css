@@ -1,0 +1,18 @@
+.advice-user-item {
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  transition: all 1s ease 0s;
+  padding: 10px 10px;
+}
+.advice-user-item:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.advice-user-item__author {
+  margin: 5px;
+}
+.advice-user-item__btn {
+  border-radius: 16px;
+  margin-left: 15px;
+  font-weight: 800;
+}

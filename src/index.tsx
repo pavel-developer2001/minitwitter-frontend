@@ -8,13 +8,13 @@ import { ApolloClient, ApolloProvider } from "@apollo/client";
 import { cache } from "./App";
 
 const client = new ApolloClient({
-	uri: "http://localhost:5000/graphql",
-	cache,
+  uri: "http://localhost:5000/graphql",
+  cache,
 });
 
 ReactDOM.render(
-	<ApolloProvider client={client}>
-		<App />
-	</ApolloProvider>,
-	document.getElementById("root")
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById("root")
 );

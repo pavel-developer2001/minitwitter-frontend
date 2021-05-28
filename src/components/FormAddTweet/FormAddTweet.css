@@ -1,0 +1,15 @@
+.add-tweet {
+  display: flex;
+  padding: 10px 5px 10px 5px;
+  background-color: white;
+}
+.add-tweet__form {
+  border: none;
+  width: 72%;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.add-tweet__btn {
+  margin-top: 8%;
+  margin-left: 5px;
+}

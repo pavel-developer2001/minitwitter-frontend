@@ -1,177 +1,39 @@
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
 .app {
-	margin: 0 100px;
+  margin: 0 100px;
 }
 #components-form-demo-normal-login .login-form {
-	max-width: 300px;
+  max-width: 300px;
 }
 #components-form-demo-normal-login .login-form-forgot {
-	float: right;
+  float: right;
 }
 #components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
-	float: left;
+  float: left;
 }
 #components-form-demo-normal-login .login-form-button {
-	width: 100%;
+  width: 100%;
 }
 .ant-menu-item-icon {
-	font-weight: 800 !important;
-	line-height: 24px !important;
-	font-size: 20px !important;
-	color: rgb(15, 20, 25) !important;
+  font-weight: 800 !important;
+  line-height: 24px !important;
+  font-size: 20px !important;
+  color: rgb(15, 20, 25) !important;
 }
 .auth {
-	width: 21%;
-	margin: 8% 38%;
+  width: 21%;
+  margin: 8% 38%;
 }
 .auth__link {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .auth__params {
-	text-align: center;
+  text-align: center;
 }
 
-.sidebar {
-	min-width: 320px !important;
-	width: 320px !important;
-	background-color: white;
-	position: fixed;
-	border-right: 1px solid gainsboro;
-}
-.menu__li {
-	font-weight: 800;
-	line-height: 24px;
-	font-size: 20px;
-	color: rgb(15, 20, 25);
-}
-.sidebar-right {
-	min-width: 320px !important;
-	width: 320px !important;
-	position: fixed;
-	background-color: white;
-	border-left: 1px solid gainsboro;
-	right: 7.9%;
-	height: -webkit-fill-available;
-}
-.sidebar-right__search {
-	padding: 6px 15px;
-}
-.sidebar__user {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all 1s ease 0s;
-	transform: translateY();
-	padding: 5px;
-	margin-top: 165%;
-	width: 65%;
-}
-.sidebar__user-name {
-	margin-left: 5px;
-}
 .ant-layout {
-	background: none;
-}
-.mylayout__content {
-	min-width: 200px;
-	position: absolute;
-	left: 27.6%;
-	width: 43.5% !important;
-}
-
-.home__header {
-	padding: 5px 15px;
-	background-color: white;
-	border-bottom: 1px solid gainsboro;
-	z-index: 99;
-	font-size: 20px;
-	font-weight: 900;
-	position: sticky;
-	top: 0;
-}
-
-.add-tweet {
-	display: flex;
-	padding: 10px 5px 10px 5px;
-	background-color: white;
-}
-.add-tweet__form {
-	border: none;
-	width: 72%;
-	margin-left: 5px;
-	font-size: 18px;
-}
-.add-tweet__btn {
-	margin-top: 8%;
-	margin-left: 5px;
-}
-.tweet-list {
-	border-top: 20px solid rgb(235, 238, 240);
-}
-.tweet-list-item {
-	display: flex;
-	background-color: white;
-	padding: 10px 8px 10px 8px;
-	transition: all 1s ease 0s;
-}
-.tweet-list-item:hover {
-	cursor: pointer;
-	background-color: rgb(247, 249, 250);
-}
-.tweet-list-item__content {
-	margin: 0 10px;
-	width: 86%;
-}
-.tweet-list-item__foot {
-	display: flex;
-	margin: 10px 0px;
-}
-.tweet-list-item__foot-setting {
-	margin: 0px 25px;
-}
-.tweet-list-item__foot-setting-icon {
-	border: none;
-}
-.tweet-list-item__foot-setting-count {
-	margin-left: 15px;
-	color: cadetblue;
-	font-weight: 600;
-}
-.profile__header {
-	border-bottom: 1px solid gainsboro;
-}
-.who-to-read {
-	padding: 15px 0px;
-	margin: 15px 18px;
-	background-color: rgb(247, 249, 250);
-	border-radius: 16px;
-}
-.who-to-read-title {
-	font-weight: 800;
-	line-height: 24px;
-	font-size: 20px;
-	color: rgb(15, 20, 25);
-	padding: 5px 15px;
-}
-.advice-user-item {
-	border-bottom: 1px solid gainsboro;
-	border-top: 1px solid gainsboro;
-	transition: all 1s ease 0s;
-	padding: 10px 10px;
-}
-.advice-user-item:hover {
-	cursor: pointer;
-	background-color: white;
-}
-.advice-user-item__author {
-	margin: 5px;
-}
-.advice-user-item__btn {
-	border-radius: 16px;
-	margin-left: 15px;
-	font-weight: 800;
+  background: none;
 }
